@@ -30,7 +30,7 @@ namespace JSON.PARSE.CHAR.COUNTER
                 Console.WriteLine("Put json files in folder to parse");
             }
             var filesList = Directory.GetFiles(filesPath);
-            var chars = Configuration["CharForParse"]; ;
+            var chars = Configuration["CharForParse"];
             var files = new List<FileModel>();
             foreach (var item in filesList)
             {
