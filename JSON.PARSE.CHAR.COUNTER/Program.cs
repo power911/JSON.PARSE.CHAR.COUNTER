@@ -14,12 +14,10 @@ namespace JSON.PARSE.CHAR.COUNTER
         {
             Configuration = new ConfigurationBuilder().AddJsonFile("appsettings.json", true, true).Build();
 
-
-            var main = new Program();
-            main.ParseJson();
+            ParseJson();
         }
 
-        private void ParseJson()
+        private static void ParseJson()
         {
             Console.WriteLine("You can change char for pasre in appsettings.json, just put your chars in 'CharForParse'");
             var filesPath = $"{Directory.GetCurrentDirectory()}\\FilesToParse";
